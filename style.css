@@ -1,0 +1,131 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.11);
+    height: 300px;
+    width: 450px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.herobox1 {
+    background-image: linear-gradient(to bottom, blueviolet, hsla(256, 72%, 46%, 1));
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em 2em 2em 2em;
+    border-radius: 20px;
+    flex: 1;
+}
+span {
+    display: block;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.highlight {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.circle {
+    background-image: linear-gradient(to bottom, rgb(55, 30, 124), hsla(241, 72%, 46%, 0));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.herobox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 1em;
+    flex:1
+}
+h2 {
+    font-size: 1.3rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+p {
+    font-size: 1rem;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.score {
+    color: hsl(224, 30%, 27%);
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+.box-title {
+    margin-left: 5px;
+}
+.box--1 {
+    background-color: hsl(0, 100%, 67%, 0.15); 
+    color: hsl(0, 100%, 67%); 
+
+}
+.box--2 {
+    background-color: hsl(39, 100%, 56%, 0.15); 
+    color: hsl(39, 100%, 56%); 
+}
+.box--3 {
+    background-color: hsl(166, 100%, 37%, 0.15); 
+    color: hsl(166, 100%, 37%); 
+}
+.box--4 {
+   background-color: hsl(234, 85%, 45%, 0.15); 
+   color: hsl(234, 85%, 45%); 
+}
+.button {
+    background-color: rgb(63, 55, 55);
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.button:hover {
+    background-image: linear-gradient(to bottom, blueviolet, hsla(256, 72%, 46%, 1));
+    transition-delay: 300ms;
+}
+
+/* Phone view */
+@media (width < 500px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .herobox1 {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
